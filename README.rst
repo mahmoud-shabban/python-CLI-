@@ -22,10 +22,13 @@ Pass in a full database connection string URL, the storage driver and the destin
 S3 Example w/ bucket name:
 
 ::
-        $ pgbackup postgres://user:pass@db-ip:port/db-name --driver s3 backups
+
+        $ pgbackup postgres://user:pass@db-ip:port/db-name --driver s3 backups 
+        
 Local Example w/ local path:
 
-:: 
+::
+
         $ pgbackup postgres://user:pass@db-ip:port/db-name --driver local /var/local/db_one/backups/dump.sql
 
 Running Tests
@@ -34,6 +37,7 @@ Running Tests
 Run test locally using ``make`` if virtualevn is active
 
 ::
+
         $ make
 
 If virtualenv is not active
